@@ -1,0 +1,33 @@
+<div ng-show="inProgress">
+	<div ng-show="!quizOver">
+		<h2 id="question">{{question}}</h2>
+
+		<ul id="options">
+			<li ng-repeat="option in options">
+				<label>
+					<input type="radio" name="answer" value="{{option}}">
+					  {{option}}
+				</label>
+			</li>
+		</ul>
+
+		<button ng-click="checkAnswer()" class="btn btn-primary btn-lg">Próxima pergunta</button>
+	</div>
+
+	<div ng-show="quizOver">
+		<h2>Terminamos!</h2>
+		<h3><b>{{level.title}}</b></h3>
+		{{level.text}} <br />
+		Seus pontos: {{score}}
+	</div>
+</div>
+
+<div class="intro" ng-show="!inProgress">
+	<p>Bem vindo ao Quiz de Marketing Digital!</p>
+
+	<input type="text" class="form-control input-lg" ng-model="email" placeholder="Coloque seu email para continuar">
+
+	<br>
+
+	<button id="startQuiz" class="btn btn-primary btn-lg" ng-disabled="!email" ng-click="start()"> Começar! </button>
+</div>
