@@ -9,7 +9,7 @@ app.directive('quiz', function(questions, levels) {
 			scope.start = function() {
 				scope.id = 0;
         scope.score = 0;
-        scope.links = [];
+        scope.wrong_questions = [];
         scope.email = "";
 
 				scope.quizOver = false;
@@ -44,7 +44,7 @@ app.directive('quiz', function(questions, levels) {
 				if(ans == scope.options[scope.answer]) {
 					scope.score++;
 				} else {
-          // Copy usefull links
+					scope.wrong_questions.push(questions.getQuestion(scope.id));
 				}
 
         scope.nextQuestion();

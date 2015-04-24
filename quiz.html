@@ -19,6 +19,18 @@
 		<h3><b>{{level.title}}</b></h3>
 		{{level.text}} <br />
 		Seus pontos: {{score}}
+
+		<h3>Questões que você errou</h3>
+		<ul>
+			<li ng-repeat="wrong_question in wrong_questions">
+				{{wrong_question.question}}
+				<ul>
+					<li ng-repeat="link in wrong_question.links">
+						<a href="{{link.link}}">{{link.name}}</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
 	</div>
 </div>
 
