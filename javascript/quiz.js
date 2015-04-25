@@ -33,6 +33,7 @@ app.directive('quiz', function(questions, levels) {
 				} else {
           scope.level = levels.getLevel(scope.score);
 					scope.quizOver = true;
+					scope.hideProgress = true;
 				}
 			};
 

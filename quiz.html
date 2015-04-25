@@ -1,4 +1,9 @@
 <div ng-show="inProgress">
+	<div ng-hide="hideProgress" class="progress">
+	  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+	    <span class="sr-only">60% Complete</span>
+	  </div>
+	</div>
 	<div ng-show="!quizOver">
 		<h3 id="question">{{question}}</h3>
 
@@ -16,7 +21,7 @@
 	</div>
 
 	<div class="results" ng-show="quizOver">
-		<p><img alt="nível" src="/images/win.png"></p>
+		<p><img alt="nível" src="/images/freshman.png"></p>
 		<h3 class="text-center level">{{level.title}}</h3>
 		<p class="text-center advice">{{level.text}}</p>
 		<p class="text-center points">Seus pontos: {{score}}</p>

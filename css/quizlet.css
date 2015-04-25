@@ -129,13 +129,13 @@ input[type=radio], input[type=checkbox] {
 }
 
 .advice {
-  font-size: 18px;
+  font-size: 20px;
   color: #b0b0b0;
 }
 
 .points {
-  font-size: 16px;
-  color: #80d284;
+  font-size: 18px;
+  color: #F58676;
 }
 
 footer {
@@ -148,4 +148,11 @@ footer {
 
 .copyright p {
   color: #b0b0b0;
+}
+
+.progress {
+  margin: 30px auto 40px;
+}
+.progress-bar {
+  background-color: #80d284;
 }
