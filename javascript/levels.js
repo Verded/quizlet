@@ -4,19 +4,24 @@ app.factory("levels", function() {
   var levels = [
     {
       minimun_score: 2,
-  		title: "Time to study!",
-  		text: "You need to study more"
+  		title: "Calouro do Marketing Digital",
+  		text: "Você começou a trilhar agora o seu caminho em marketing digital. Continue firme e forte!"
   	},
     {
       minimun_score: 4,
-  		title: "On the way!",
-  		text: "You can study a little bit"
+  		title: "Recém-graduado em Marketing Digital",
+  		text: "Você já aprendeu o essencial e está pronto para seguir seu caminho!"
   	},
     {
       minimun_score: 5,
-  		title: "Nerd herd!",
-  		text: "Do you have any relationship with Albert Einstein?"
-  	}
+  		title: "Expert em Marketing Digital",
+  		text: "Você já sabe quase tudo de marketing digital."
+  	},
+    {
+      minimun_score: 5,
+      title: "Ninja do Marketing Digital",
+      text: "Você sabe tudo de marketing digital. Me dá um autógrafo?"
+    }
   ];
 
   return {

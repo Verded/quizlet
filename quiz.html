@@ -1,6 +1,6 @@
 <div ng-show="inProgress">
 	<div ng-show="!quizOver">
-		<h2 id="question">{{question}}</h2>
+		<h3 id="question">{{question}}</h3>
 
 		<ul id="options">
 			<li ng-repeat="option in options">
@@ -10,16 +10,18 @@
 				</label>
 			</li>
 		</ul>
-
-		<button ng-click="checkAnswer()" class="btn btn-primary btn-lg">Próxima pergunta</button>
+		<div class="action">
+			<button ng-click="checkAnswer()" class="btn btn-primary btn-lg">Próxima pergunta</button>
+		</div>
 	</div>
 
-	<div ng-show="quizOver">
-		<h2>Terminamos!</h2>
-		<h3><b>{{level.title}}</b></h3>
-		{{level.text}} <br />
-		Seus pontos: {{score}}
+	<div class="results" ng-show="quizOver">
+		<p><img alt="nível" src="/images/win.png"></p>
+		<h3 class="text-center level">{{level.title}}</h3>
+		<p class="text-center advice">{{level.text}}</p>
+		<p class="text-center points">Seus pontos: {{score}}</p>
 
+		<hr>
 		<h3>Questões que você errou</h3>
 		<ul>
 			<li ng-repeat="wrong_question in wrong_questions">
@@ -35,11 +37,14 @@
 </div>
 
 <div class="intro" ng-show="!inProgress">
-	<p>Bem vindo ao Quiz de Marketing Digital!</p>
+	<p><img alt="Rdstation" src="/images/quiz.png"></p>
+	<h2> <b> Quiz de Marketing Digital</b> </h2>
+	<h3>Bem vindo ao Quiz de Marketing Digital!</h3>
 
-	<input type="text" class="form-control input-lg" ng-model="email" placeholder="Coloque seu email para continuar">
-
-	<br>
-
-	<button id="startQuiz" class="btn btn-primary btn-lg" ng-disabled="!email" ng-click="start()"> Começar! </button>
+	<input type="text" class="form-control input-lg" ng-model="name" placeholder="Nome">
+	<input type="text" class="form-control input-lg" ng-model="email" placeholder="Email">
+	<p class="text-center">
+		<button id="startQuiz" class="btn btn-primary btn-block btn-lg" ng-disabled="!email" ng-click="start()"> Começar! </button>
+	</p>
 </div>
+

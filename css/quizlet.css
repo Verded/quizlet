@@ -1,7 +1,151 @@
 h1, h2, h3, h4, h5 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Source Sans Pro",sans-serif;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Source Sans Pro",sans-serif;
+}
+
+header {
+  background-color: #506e84;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 16px;
+  color: #fff;
+  margin: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 18px;
+  color: #9c9c9c;
+}
+
+.results ul li {
+  font-size: 18px;
+  color: #9c9c9c;
+  line-height: 2em;
+}
+
+label {
+  margin-bottom: 9px;
+  font-weight: normal;
+}
+
+a {
+  color: #80d284;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #70c474;
+}
+
+hr {
+  margin: 30px 0;
+}
+
+#startQuiz {
+  margin-top: 20px;
+}
+
+#question {
+  color: #506e84;
+}
+
+.intro {
+  width: 472px;
+  margin: auto;
+}
+
+.intro input {
+  margin: 22px 0;
+}
+
+.intro h3 {
+  font-size: 24px;
+  color: #b0b0b0;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 100;
+}
+
+.intro img {
+  margin: 40px 0 20px;
+}
+
+.about h2 {
+  color: #506e84;
+  font-size: 42px;
+  text-align: center;
+}
+
+.btn-primary {
+  border: none;
+  background-color: #F58676;
+  box-shadow: 0px 4px 0px #DD7266;
+}
+
+.btn-primary:hover {
+  border: none;
+  background-color: #ED857A;
+  box-shadow: 0px 4px 0px #CE6B63;
+}
+
+.btn-primary:focus {
+  border: none;
+  background-color: #F58676;
+  box-shadow: 0px 4px 0px #DD7266;
+}
+
+.btn-primary[disabled], .btn-primary[disabled]:hover {
+  border: none;
+  background-color: #F58676;
+  box-shadow: 0px 4px 0px #DD7266;
+}
+
+input[type=radio], input[type=checkbox] {
+  margin: 4px 5px 0;
+}
+
+.level {
+  font-size: 34px;
+}
+
+.results h3 {
+  color: #506e84;
+}
+
+.results img {
+  margin: 30px auto;
+  display: block;
+}
+
+.advice {
+  font-size: 18px;
+  color: #b0b0b0;
+}
+
+.points {
+  font-size: 16px;
+  color: #80d284;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+.copyright p {
+  color: #b0b0b0;
 }
