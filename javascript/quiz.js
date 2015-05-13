@@ -8,8 +8,13 @@ app.directive('quiz', function(questions, levels) {
 		link: function(scope, elem, attrs) {
 			scope.start = function() {
 				scope.id = 0;
+
         scope.score = 0;
+        scope.maximun_score = questions.length();
+
+
         scope.wrong_questions = [];
+        scope.name = "";
         scope.email = "";
 
 				scope.quizOver = false;

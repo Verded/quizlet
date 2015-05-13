@@ -21,13 +21,13 @@
 	</div>
 
 	<div class="results" ng-show="quizOver">
-		<p><img alt="nível" src="images/freshman.png"></p>
+		<p><img alt="nível" src="{{level.image}}"></p>
 		<h3 class="text-center level">{{level.title}}</h3>
 		<p class="text-center advice">{{level.text}}</p>
-		<p class="text-center points">Seus pontos: {{score}}</p>
+		<p class="text-center points">Você acertou {{score}} questões de {{maximun_score}}</p>
 
 		<hr>
-		<h3>Questões que você errou</h3>
+		<h3 ng-visible="wrong_question">Questões que você errou</h3>
 		<ul>
 			<li ng-repeat="wrong_question in wrong_questions">
 				{{wrong_question.question}}

@@ -4,6 +4,7 @@ h1, h2, h3, h4, h5 {
 
 body {
   font-family: "Source Sans Pro",sans-serif;
+  background-color: #fdfdfd;
 }
 
 header {
@@ -40,7 +41,7 @@ label {
 }
 
 a {
-  color: #80d284;
+  color: #F58676;
   text-decoration: none;
 }
 
@@ -53,7 +54,7 @@ hr {
 }
 
 #startQuiz {
-  margin-top: 20px;
+  margin: 20px 0 60px;
 }
 
 #question {
@@ -63,6 +64,7 @@ hr {
 .intro {
   width: 472px;
   margin: auto;
+  padding-bottom: 120px;
 }
 
 .intro input {
@@ -128,22 +130,30 @@ input[type=radio], input[type=checkbox] {
   display: block;
 }
 
+.results {
+  padding-bottom: 160px;
+}
+
 .advice {
   font-size: 20px;
   color: #b0b0b0;
 }
 
 .points {
-  font-size: 18px;
-  color: #F58676;
+  font-size: 22px;
+  color: #80d284;
 }
 
 footer {
     position: fixed;
+    display: block;
     bottom: 0;
     text-align: center;
     margin: auto;
+    padding: 20px;
     width: 100%;
+    background-color: #fff;
+    z-index: 4;
 }
 
 .copyright p {
